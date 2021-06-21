@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Present_Value_of_Annuity_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="112.5" y="312" width="150.5" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                                <rect key="frame" x="0.0" y="0.0" width="194.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Payout:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChM-zc-dm0">
+                                <rect key="frame" x="15" y="116" width="170" height="35"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Growth Rate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlf-AN-7Qd">
+                                <rect key="frame" x="15" y="183" width="151" height="35"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xIU-gn-JQZ">
+                                <rect key="frame" x="232" y="118.5" width="113" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uGI-rl-v7E">
+                                <rect key="frame" x="232" y="185.5" width="113" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0SJ-Ut-fbg">
+                                <rect key="frame" x="232" y="244.5" width="111" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Years to Pay Out:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87f-I6-e69">
+                                <rect key="frame" x="15" y="242" width="203" height="35"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGO-5Z-B3q">
+                                <rect key="frame" x="62" y="313" width="251" height="118.5"/>
+                                <color key="backgroundColor" red="0.92954413748928089" green="0.95512178863879538" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="48"/>
+                                <state key="normal" title="Calculate"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="MyButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="vA0-be-84w"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaI-6x-DuY">
+                                <rect key="frame" x="347" y="116" width="15" height="35"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUQ-Zh-jsP">
+                                <rect key="frame" x="347" y="183" width="24" height="35"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3g-Sd-IfS">
+                                <rect key="frame" x="35" y="514.5" width="305" height="76.5"/>
+                                <color key="backgroundColor" red="0.95262590783423817" green="1" blue="0.93014260742316734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PV of Annuity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYO-vc-Qfp">
+                                <rect key="frame" x="100" y="50" width="177" height="38"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hY9-O2-bIy">
+                                <rect key="frame" x="99" y="439.5" width="178" height="37"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Medium" family="PingFang HK" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="r3g-Sd-IfS" secondAttribute="trailing" constant="35" id="05i-Za-VcL"/>
+                            <constraint firstItem="zaI-6x-DuY" firstAttribute="leading" secondItem="xIU-gn-JQZ" secondAttribute="trailing" constant="2" id="0MW-MM-BQZ"/>
+                            <constraint firstItem="uGI-rl-v7E" firstAttribute="centerY" secondItem="tUQ-Zh-jsP" secondAttribute="centerY" id="0W4-d5-gMj"/>
+                            <constraint firstItem="r3g-Sd-IfS" firstAttribute="top" secondItem="hY9-O2-bIy" secondAttribute="bottom" constant="38" id="0fy-3k-lBz"/>
+                            <constraint firstItem="tUQ-Zh-jsP" firstAttribute="leading" secondItem="uGI-rl-v7E" secondAttribute="trailing" constant="2" id="2S4-0n-94x"/>
+                            <constraint firstItem="xIU-gn-JQZ" firstAttribute="leading" secondItem="ChM-zc-dm0" secondAttribute="trailing" constant="47" id="2qu-Si-6A8"/>
+                            <constraint firstItem="uGI-rl-v7E" firstAttribute="leading" secondItem="Tlf-AN-7Qd" secondAttribute="trailing" constant="66" id="5Up-el-sud"/>
+                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="ChM-zc-dm0" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="15" id="6QY-cE-8vV"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="hY9-O2-bIy" secondAttribute="trailing" constant="98" id="6zk-Ye-552"/>
+                            <constraint firstItem="87f-I6-e69" firstAttribute="top" secondItem="Tlf-AN-7Qd" secondAttribute="bottom" constant="24" id="849-4Y-qI2"/>
+                            <constraint firstItem="Tlf-AN-7Qd" firstAttribute="top" secondItem="ChM-zc-dm0" secondAttribute="bottom" constant="32" id="9en-yV-nwB"/>
+                            <constraint firstItem="hY9-O2-bIy" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="99" id="HYd-bk-YFt"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="gGO-5Z-B3q" secondAttribute="trailing" constant="62" id="HmB-Yw-208"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="r3g-Sd-IfS" secondAttribute="bottom" constant="27" id="Mmb-OU-KQN"/>
+                            <constraint firstItem="87f-I6-e69" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="15" id="NTC-ry-hsx"/>
+                            <constraint firstItem="hY9-O2-bIy" firstAttribute="top" secondItem="gGO-5Z-B3q" secondAttribute="bottom" constant="8" id="OCR-BT-tCe"/>
+                            <constraint firstItem="87f-I6-e69" firstAttribute="centerY" secondItem="0SJ-Ut-fbg" secondAttribute="centerY" id="PpB-Y2-79V"/>
+                            <constraint firstItem="Tlf-AN-7Qd" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="15" id="T3t-Wo-E17"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="0SJ-Ut-fbg" secondAttribute="trailing" constant="32" id="Tk8-ol-PhM"/>
+                            <constraint firstItem="0SJ-Ut-fbg" firstAttribute="leading" secondItem="87f-I6-e69" secondAttribute="trailing" constant="14" id="VB8-5R-7bS"/>
+                            <constraint firstItem="ChM-zc-dm0" firstAttribute="top" secondItem="eYO-vc-Qfp" secondAttribute="bottom" constant="28" id="VZv-bD-nwD"/>
+                            <constraint firstItem="Tlf-AN-7Qd" firstAttribute="centerY" secondItem="uGI-rl-v7E" secondAttribute="centerY" id="WuR-5H-BWD"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="87f-I6-e69" secondAttribute="trailing" constant="157" id="Xmg-xv-SeS"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="eYO-vc-Qfp" secondAttribute="trailing" constant="98" id="Zr3-pK-W2z"/>
+                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
+                            <constraint firstItem="gGO-5Z-B3q" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="62" id="dL1-1l-E2o"/>
+                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
+                            <constraint firstItem="gGO-5Z-B3q" firstAttribute="top" secondItem="87f-I6-e69" secondAttribute="bottom" constant="36" id="eIu-oD-279"/>
+                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="r3g-Sd-IfS" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="35" id="gF4-Fd-F6S"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Tlf-AN-7Qd" secondAttribute="trailing" constant="209" id="hIi-w5-Wvm"/>
+                            <constraint firstItem="xIU-gn-JQZ" firstAttribute="centerY" secondItem="zaI-6x-DuY" secondAttribute="centerY" id="j5M-CQ-e6r"/>
+                            <constraint firstItem="eYO-vc-Qfp" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="30" id="jbG-na-asR"/>
+                            <constraint firstItem="87f-I6-e69" firstAttribute="centerY" secondItem="0SJ-Ut-fbg" secondAttribute="centerY" id="l5s-kE-gZK"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="ChM-zc-dm0" secondAttribute="trailing" constant="190" id="yTY-T0-vrO"/>
+                            <constraint firstItem="ChM-zc-dm0" firstAttribute="centerY" secondItem="xIU-gn-JQZ" secondAttribute="centerY" id="yeD-fw-8FK"/>
+                            <constraint firstItem="eYO-vc-Qfp" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="100" id="zsf-SX-HFV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KQZ-1w-vlD"/>
+                                <exclude reference="A5M-7J-77L"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="PpB-Y2-79V"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calculator" image="calculator" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="AnnualPayout" destination="xIU-gn-JQZ" id="EVJ-E6-Edl"/>
+                        <outlet property="GrowthRate" destination="uGI-rl-v7E" id="FAg-vg-SjC"/>
+                        <outlet property="MyLabel" destination="r3g-Sd-IfS" id="TGi-Vo-xhb"/>
+                        <outlet property="YearstoPayOut" destination="0SJ-Ut-fbg" id="cQs-0m-oqH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--About Me-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Present_Value_of_Annuity_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijP-zc-zbd">
+                                <rect key="frame" x="42" y="144.5" width="291" height="357.5"/>
+                                <string key="text">I made this calculator because I wanted to teach people about the time value of money.  It teaches consumers that a single lump sum payment in the future is worth less in today’s dollars. This helps consumers make more educated decisions regarding loan payments or court settlements. I believe training the mind to consistently consider the  economic wellbeing of one’s future self can help him/her avoid poor financial decisions.
+
+-Nick Dean</string>
+                                <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="87" y="312" width="201.5" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="80" y="363" width="215" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqc-rv-nAq">
+                                <rect key="frame" x="125" y="52" width="125" height="38"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Yqc-rv-nAq" secondAttribute="trailing" constant="125" id="1eU-5L-Z9K"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="ijP-zc-zbd" secondAttribute="trailing" constant="42" id="ENG-bL-IPJ"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstItem="ijP-zc-zbd" firstAttribute="top" secondItem="Yqc-rv-nAq" secondAttribute="bottom" constant="54.5" id="TpV-Iu-Aca"/>
+                            <constraint firstItem="Yqc-rv-nAq" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="125" id="cxl-75-ONW"/>
+                            <constraint firstItem="Yqc-rv-nAq" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="32" id="die-vm-G9N"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="ijP-zc-zbd" secondAttribute="bottom" constant="116" id="fev-XY-4d2"/>
+                            <constraint firstItem="ijP-zc-zbd" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="42" id="mhv-Iw-fYQ"/>
+                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
+                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zEq-FU-wV5"/>
+                                <exclude reference="NDk-cv-Gan"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About Me" image="user" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calculator" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
+    </resources>
+</document>
